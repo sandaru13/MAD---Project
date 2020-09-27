@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "993948451764",
+    "firebase_url": "https://adzz-project.firebaseio.com",
+    "project_id": "adzz-project",
+    "storage_bucket": "adzz-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993948451764:android:75f2e7638a920682fd68e1",
+        "android_client_info": {
+          "package_name": "com.example.adzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993948451764-uq3oskfivhhjulh40tr9tqe71qufjvdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.adzz",
+            "certificate_hash": "686357974efd6ff3476db014250769a419efa9f7"
+          }
+        },
+        {
+          "client_id": "993948451764-3r4o10rng7jo8l9dhev2smcue4bav579.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJHzqvNKIM08Lq9JWct58pQMl-SWvNM1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993948451764-3r4o10rng7jo8l9dhev2smcue4bav579.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

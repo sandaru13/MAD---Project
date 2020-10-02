@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">AdZz</string>
+    <string name="Login">Login</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Login_bt">Login</string>
+    <string name="Forgot_Password">Forgot Password</string>
+    <string name="SignUp">Don\'t have an account? Sign Up here</string>
+    <string name="Ad">Post your Advertisement</string>
+    <string name="Title">Title of the advertisement</string>
+    <string name="Description">Description about the item/s</string>
+    <string name="Category">Select the relevant category of the product</string>
+    <string name="Upload">Upload images of the items</string>
+    <string name="Picture">Upload</string>
+    <string name="Price">Enter price of the item</string>
+    <string name="Phone">Contact Information</string>
+    <string name="Post_bt">Post Ad</string>
+    <string name="Negotiate">Price can be negotiate</string>
+    <string name="Welcome">Welcome !</string>
+    <string name="Sell">Looking to Sell Something</string>
+    <string name="Buy">Looking to Buy Something</string>
+    <string name="Sell_des">Post your advertisement right here</string>
+    <string name="Buy_des">Search your desired item right here</string>
+    <string name="Sign_up">Sign Up</string>
+    <string name="Details">Your Ad Details</string>
+    <string name="Edit">Edit Ad</string>
+    <string name="Done">All Done!</string>
+    <string name="Delete">Delete Ad</string>
+    <string name="Image">Image</string>
+    <string-array name="Type">
+        <item>Mobile Phones</item>
+        <item>Furniture</item>
+        <item>House Holdings</item>
+        <item>Fashion and Beauty</item>
+    </string-array>
+</resources>

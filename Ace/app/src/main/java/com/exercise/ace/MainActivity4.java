@@ -38,7 +38,7 @@ public class MainActivity4 extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                reff = FirebaseDatabase.getInstance().getReference().child("Ad").child("-MIe472a7zEkFWEZvOQ-");
+                reff = FirebaseDatabase.getInstance().getReference().child("Advertisements").child("-MIe4j6KpPQuTaviNq_N");
                 reff.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -87,7 +87,7 @@ public class MainActivity4 extends AppCompatActivity {
     }
 
     public void Home() {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MainActivity5.class);
         startActivity(intent);
     }
 

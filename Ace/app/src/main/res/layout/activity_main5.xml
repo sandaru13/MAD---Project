@@ -134,7 +134,7 @@
         android:layout_height="41dp"
         android:layout_marginTop="2dp"
         android:background="#FFFFFF"
-        android:text="@string/Login"
+        android:text="@string/Profile"
         android:textColor="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

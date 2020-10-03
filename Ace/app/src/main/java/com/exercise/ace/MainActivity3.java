@@ -124,12 +124,14 @@ public class MainActivity3 extends AppCompatActivity {
     public void viewAd() {
         Long ph = Long.parseLong(phone.getText().toString().trim());
         float pr = Float.parseFloat(price.getText().toString().trim());
+        String img = imguri.toString();
 
         ad.setTitle(title.getText().toString().trim());
         ad.setDescription(description.getText().toString().trim());
         ad.setCategory(sp1.getSelectedItem().toString().trim());
         ad.setPrice(pr);
         ad.setPhone(ph);
+        ad.setImg(img);
 
         reff.push().setValue(ad);
         Toast.makeText(MainActivity3.this, "Advertisement Successfully Posted", Toast.LENGTH_LONG).show();

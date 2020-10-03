@@ -1,5 +1,7 @@
 package com.exercise.ace;
 
+import android.net.Uri;
+
 public class Ad {
 
     private String Title;
@@ -7,6 +9,7 @@ public class Ad {
     private float Price;
     private  long Phone;
     private String Category;
+    private String img;
 
     public Ad() {
 
@@ -50,5 +53,13 @@ public class Ad {
 
     public void setCategory(String category) {
         Category = category;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 }

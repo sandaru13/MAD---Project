@@ -27,6 +27,7 @@
     <string name="Done">All Done!</string>
     <string name="Delete">Delete Ad</string>
     <string name="Image">Image</string>
+    <string name="Choose">Choose a Image</string>
     <string name="Profile">My Profile</string>
     <string-array name="Type">
         <item>Mobile Phones</item>

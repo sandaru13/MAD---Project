@@ -49,17 +49,17 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="359dp"
-        android:layout_height="34dp"
+        android:layout_width="358dp"
+        android:layout_height="45dp"
         android:autofillHints="Title"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.169"
+        app:layout_constraintVertical_bias="0.171"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -78,17 +78,17 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
-        android:layout_width="354dp"
-        android:layout_height="41dp"
+        android:layout_width="353dp"
+        android:layout_height="52dp"
         android:autofillHints="Description"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintHorizontal_bias="0.275"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294"
+        app:layout_constraintVertical_bias="0.288"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -107,14 +107,14 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="264dp"
-        android:layout_height="32dp"
+        android:layout_width="262dp"
+        android:layout_height="46dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419" />
+        app:layout_constraintVertical_bias="0.429" />
 
     <TextView
         android:id="@+id/textView8"
@@ -128,20 +128,20 @@
         app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482" />
+        app:layout_constraintVertical_bias="0.486" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="79dp"
-        android:layout_height="34dp"
+        android:layout_width="88dp"
+        android:layout_height="37dp"
         android:background="#03A9F4"
         android:text="@string/Picture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintVertical_bias="0.621" />
 
     <TextView
         android:id="@+id/textView9"
@@ -155,12 +155,12 @@
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.605" />
+        app:layout_constraintVertical_bias="0.712" />
 
     <EditText
         android:id="@+id/editTextNumber"
-        android:layout_width="215dp"
-        android:layout_height="42dp"
+        android:layout_width="213dp"
+        android:layout_height="49dp"
         android:autofillHints="Price"
         android:ems="10"
         android:inputType="number"
@@ -169,7 +169,7 @@
         app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669"
+        app:layout_constraintVertical_bias="0.78"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -184,22 +184,22 @@
         app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.833" />
 
     <EditText
         android:id="@+id/editTextPhone"
-        android:layout_width="216dp"
-        android:layout_height="38dp"
+        android:layout_width="213dp"
+        android:layout_height="44dp"
+        android:autofillHints="Number"
         android:ems="10"
         android:inputType="phone"
-        android:autofillHints="Number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.082"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793"
-        tools:ignore="LabelFor"/>
+        app:layout_constraintVertical_bias="0.898"
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/button5"
@@ -213,5 +213,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.989" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="165dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="16dp"
+        android:background="#65040000"
+        android:text="@string/Choose"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,7 @@ public class MainActivity3 extends AppCompatActivity {
     private Button button3;
     DatabaseReference reff;
     Ad ad;
+    Spinner sp1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class MainActivity3 extends AppCompatActivity {
 
         title = (EditText)findViewById(R.id.editTextTextPersonName2);
         description = (EditText)findViewById(R.id.editTextTextPersonName3);
+        sp1 = (Spinner) findViewById(R.id.spinner);
         price = (EditText)findViewById(R.id.editTextNumber);
         phone = (EditText)findViewById(R.id.editTextPhone);
         button3 = (Button) findViewById(R.id.button5);
@@ -51,6 +53,7 @@ public class MainActivity3 extends AppCompatActivity {
 
         ad.setTitle(title.getText().toString().trim());
         ad.setDescription(description.getText().toString().trim());
+        ad.setCategory(sp1.getSelectedItem().toString().trim());
         ad.setPrice(pr);
         ad.setPhone(ph);
 

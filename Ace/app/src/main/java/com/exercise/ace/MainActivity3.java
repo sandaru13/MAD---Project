@@ -19,8 +19,11 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -34,6 +37,7 @@ public class MainActivity3 extends AppCompatActivity {
     Ad ad;
     Spinner sp1;
     public Uri imguri;
+    long maxid=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +56,21 @@ public class MainActivity3 extends AppCompatActivity {
         phone = (EditText)findViewById(R.id.editTextPhone);
         button3 = (Button) findViewById(R.id.button5);
         ad = new Ad();
-        reff = FirebaseDatabase.getInstance().getReference().child("Advertisements");
+        reff = FirebaseDatabase.getInstance().getReference().child("Ad");
+        reff.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+                    maxid = (snapshot.getChildrenCount());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -122,18 +140,16 @@ public class MainActivity3 extends AppCompatActivity {
     }
 
     public void viewAd() {
-        Long ph = Long.parseLong(phone.getText().toString().trim());
-        float pr = Float.parseFloat(price.getText().toString().trim());
         String img = imguri.toString();
 
         ad.setTitle(title.getText().toString().trim());
         ad.setDescription(description.getText().toString().trim());
         ad.setCategory(sp1.getSelectedItem().toString().trim());
-        ad.setPrice(pr);
-        ad.setPhone(ph);
+        ad.setPrice(price.getText().toString().trim());
+        ad.setPhone(phone.getText().toString().trim());
         ad.setImg(img);
 
-        reff.push().setValue(ad);
+        reff.child(String.valueOf(maxid+1)).setValue(ad);
         Toast.makeText(MainActivity3.this, "Advertisement Successfully Posted", Toast.LENGTH_LONG).show();
 
         Intent intent = new Intent(this, MainActivity4.class);

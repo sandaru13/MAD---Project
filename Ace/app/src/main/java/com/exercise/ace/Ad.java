@@ -6,13 +6,21 @@ public class Ad {
 
     private String Title;
     private String Description;
-    private float Price;
-    private  long Phone;
+    private String Price;
+    private String Phone;
     private String Category;
     private String img;
 
     public Ad() {
 
+    }
+
+    public Ad(String Title, String Description, String Price,String img,String Phone) {
+        this.Title = Title;
+        this.Description = Description;
+        this.Price = Price;
+        this.img = img;
+        this.Phone = Phone;
     }
 
     public String getTitle() {
@@ -31,19 +39,19 @@ public class Ad {
         Description = description;
     }
 
-    public float getPrice() {
+    public String  getPrice() {
         return Price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(String price) {
         Price = price;
     }
 
-    public long getPhone() {
+    public String getPhone() {
         return Phone;
     }
 
-    public void setPhone(long phone) {
+    public void setPhone(String phone) {
         Phone = phone;
     }
 

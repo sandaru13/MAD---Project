@@ -4,13 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -23,6 +26,7 @@ public class MainActivity4 extends AppCompatActivity {
     private Button button6;
     private Button btn;
     TextView a, b, c, d, e;
+    ImageView imgv;
     DatabaseReference reff;
 
     @Override
@@ -30,31 +34,40 @@ public class MainActivity4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
+
         a = (TextView)findViewById(R.id.title);
         b = (TextView)findViewById(R.id.description);
         d = (TextView)findViewById(R.id.price);
         c = (TextView)findViewById(R.id.category);
         e = (TextView)findViewById(R.id.phone);
+        imgv = (ImageView)findViewById(R.id.imageView);
         btn = (Button)findViewById(R.id.button12);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                reff = FirebaseDatabase.getInstance().getReference().child("Advertisements").child("-MIhGSoyAzpD922m1W66");
+                reff = FirebaseDatabase.getInstance().getReference().child("Ad").child("1");
                 reff.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
+
 
                         String title = snapshot.child("title").getValue().toString();
                         String description = snapshot.child("description").getValue().toString();
                         String category = snapshot.child("category").getValue().toString();
                         String price = snapshot.child("price").getValue().toString();
                         String phone = snapshot.child("phone").getValue().toString();
+                        String img = snapshot.child("img").getValue().toString();
+                        Uri image = Uri.parse(img);
                         a.setText(title);
                         b.setText(description);
                         c.setText(category);
                         d.setText(price);
                         e.setText(phone);
+                        imgv.setImageURI(image);
+                        //int maxid = Integer.parseInt(id);
+                        //maxid = maxid + 1;
+                        //id = Integer.toString(maxid);
                     }
 
                     @Override
@@ -96,7 +109,7 @@ public class MainActivity4 extends AppCompatActivity {
     }
 
     public void Edit() {
-        Intent intent = new Intent(this, MainActivity3.class);
+        Intent intent = new Intent(this, MainActivity6.class);
         startActivity(intent);
     }
 

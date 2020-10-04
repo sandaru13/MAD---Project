@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity5 extends AppCompatActivity {
-    private Button btn;
+    private Button btn, button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +22,21 @@ public class MainActivity5 extends AppCompatActivity {
                 Login();
             }
         });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Seller();
+            }
+        });
     }
 
     public void Login() {
         Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
+
+    public void Seller() {
+        Intent intent = new Intent(this, MainActivity7.class);
         startActivity(intent);
     }
 }

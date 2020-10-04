@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "875049176370",
+    "firebase_url": "https://buying-and-selling-b128d.firebaseio.com",
+    "project_id": "buying-and-selling-b128d",
+    "storage_bucket": "buying-and-selling-b128d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875049176370:android:547f668a2ddace37d69b2b",
+        "android_client_info": {
+          "package_name": "com.example.buyingandselling"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875049176370-f6ag1g06v1ana4tffi9hcpddp9ru63m4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.buyingandselling",
+            "certificate_hash": "29ec014a37761b2108300e260b7cd6d7dfc95495"
+          }
+        },
+        {
+          "client_id": "875049176370-cbve2dd47und1jf9gsqrp75n2p802dmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhb4iowjgem3ob24PHtlSpDQdVN5WM-TA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875049176370-cbve2dd47und1jf9gsqrp75n2p802dmk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

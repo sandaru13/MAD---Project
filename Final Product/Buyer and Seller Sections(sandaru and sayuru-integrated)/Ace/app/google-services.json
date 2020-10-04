@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "185563334353",
+    "firebase_url": "https://acefirebaseproject-197dc.firebaseio.com",
+    "project_id": "acefirebaseproject-197dc",
+    "storage_bucket": "acefirebaseproject-197dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:185563334353:android:470e5d6e77ed6af23ba7f0",
+        "android_client_info": {
+          "package_name": "com.exercise.ace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "185563334353-90k839e0h8p97tiu8m1oacerc0pv89h1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exercise.ace",
+            "certificate_hash": "f23de91a6441a17e076540c5a2fd388cb959319f"
+          }
+        },
+        {
+          "client_id": "185563334353-qm6q5g7vb1pgbecuphog3gcvckvk3al3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0hqbacUYrJsShbEpEp4IN-BudAfXZifg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "185563334353-qm6q5g7vb1pgbecuphog3gcvckvk3al3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

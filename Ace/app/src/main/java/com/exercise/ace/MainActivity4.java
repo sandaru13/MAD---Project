@@ -104,7 +104,7 @@ public class MainActivity4 extends AppCompatActivity {
     }
 
     public void Home() {
-        Intent intent = new Intent(this, MainActivity5.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 
@@ -114,7 +114,11 @@ public class MainActivity4 extends AppCompatActivity {
     }
 
     public void Delete() {
-        Intent intent = new Intent(this, MainActivity3.class);
+
+        reff = FirebaseDatabase.getInstance().getReference().child("Ad");
+        reff.child("1").removeValue();
+        Toast.makeText(MainActivity4.this, "Advertisement Successfully Deleted", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

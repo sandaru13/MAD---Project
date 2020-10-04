@@ -59,11 +59,10 @@ public class RecyclerViewConfig {
             mdescription.setText(ado.getDescription());
             mprice.setText(ado.getPrice());
 
-            String img = ado.getImg();
-            Uri image = Uri.parse(img);
-            //
+            //String img = ado.getImg();
+            //Uri image = Uri.parse(img);
 
-            mimg.setImageURI(image);
+            //mimg.setImageURI(ado.sandaru());
             mphone.setText(ado.getPhone());
             this.key = key;
         }

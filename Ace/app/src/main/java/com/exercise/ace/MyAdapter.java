@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyAdapterViewHolder> {
 
@@ -51,11 +52,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyAdapterViewHolde
         holder.tit.setText(ads.getTitle());
         holder.pri.setText(ads.getPrice());
 
-        String img = ads.getImg();
-        Uri image = Uri.parse(img);
+        //String img = ads.getImg();
+        //Uri image = Uri.parse(img);
 
-        //holder.pri.setText(ads.getPrice());
-        holder.imgv.setImageURI(image);
+        //holder.imgv.setImageURI(ads.sandaru());
         holder.pho.setText(ads.getPhone());
 
     }

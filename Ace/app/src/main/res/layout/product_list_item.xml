@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
-        android:background="#C3E91E63"
+        android:background="#A1E91E63"
         android:text="TextView"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,11 +23,11 @@
         android:id="@+id/description"
         android:layout_width="199dp"
         android:layout_height="128dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="84dp"
-        android:background="#8F9C27B0"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="80dp"
+        android:background="#639C27B0"
         android:text="TextView"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,12 +36,12 @@
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="244dp"
-        android:background="#9FF44336"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="232dp"
+        android:background="#A4009688"
         android:fontFamily="monospace"
         android:text="TextView"
-        android:textSize="16sp"
+        android:textSize="19sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,17 +53,17 @@
         android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/common_google_signin_btn_icon_light_normal_background" />
+        app:srcCompat="@drawable/a50" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="244dp"
-        android:background="#9EF44336"
-        android:text="Price"
-        android:textSize="16sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="232dp"
+        android:background="#A4009688"
+        android:text="Price:"
+        android:textSize="19sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,36 +71,38 @@
         android:id="@+id/divider"
         android:layout_width="409dp"
         android:layout_height="1dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="29dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/price" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="232dp"
         android:background="#A4009688"
         android:fontFamily="monospace"
-        android:text="Contact"
-        android:textSize="16sp"
+        android:text="Contact:"
+        android:textSize="19sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="253dp"
-        android:layout_marginTop="244dp"
+        android:layout_width="116dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="232dp"
         android:background="#A4009688"
         android:fontFamily="monospace"
         android:text="TextView"
-        android:textSize="16sp"
+        android:textSize="19sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

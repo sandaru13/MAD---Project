@@ -1,0 +1,48 @@
+<resources>
+    <string name="signup">Sign Up</string>
+    <string name="UserName">Username</string>
+    <string name="Password">Password</string>
+    <string name="ReEnterPassword">Re-Enter Password</string>
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="app_name">MAD</string>
+    <string-array name="City">
+        <item>Anuradhapura</item>
+        <item>Jaffna</item>
+        <item>Kilinochchi</item>
+        <item>Mannar</item>
+        <item>Mullaitivu</item>
+        <item>Vavuniya</item>
+        <item>Puttalam</item>
+        <item>Kurunegala</item>
+        <item>Gampaha</item>
+        <item>Colombo</item>
+        <item>Kalutara</item>
+        <item>Polonnaruwa</item>
+        <item>Matale</item>
+        <item>Kandy</item>
+        <item>Nuwara Eliya</item>
+        <item>Kegalle</item>
+        <item>Ratnapura</item>
+        <item>Batticaloa</item>
+        <item>Ampara</item>
+        <item>Badulla</item>
+        <item>Monaragala</item>
+        <item>Hambantota</item>
+        <item>Matara</item>
+        <item>Galle</item>
+    </string-array>
+    <string name="UserName1">UserName</string>
+    <string name="UserName2">SupunK</string>
+    <string name="Password1">Password</string>
+    <string name="Password2">Supun@321</string>
+    <string name="Name1">Name</string>
+    <string name="Name2">Supun Kanishka</string>
+    <string name="Email1">Email</string>
+    <string name="Email2">s.kanishka@gmail.com</string>
+    <string name="PhoneNumber1">PhoneNumber</string>
+    <string name="PhoneNumber2">0778978657</string>
+    <string name="text">We will mail you a Reset Password link when you provide your email in this Section</string>
+    <string name="resetBtn">Send Email</string>
+</resources>
